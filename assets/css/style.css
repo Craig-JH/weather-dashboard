@@ -1,17 +1,17 @@
-:root {
+/* :root {
   --primary: #ccdad1;
   --secondary: #9caea9;
   --tertiary: #788585;
   --light-dark: #6f6866;
   --dark: #38302e;
   --border-radius: .3rem;
-}
+} */
 
 * {
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-color: var(--primary);
   margin: 0;
   padding: 0;
@@ -19,17 +19,19 @@ body {
   color: var(--dark);
   line-height: 1.5;
   font-size: 16px;
+} */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  background-color:#8080f6;
+  background-image: linear-gradient(to right, #8080f6, #0e0efe);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  margin: 0;
-  color: var(--dark);
+h1 {
+  display: flex;
+  justify-content: center;
+  color:#f7f7fc;
   line-height: 1.25;
 }
 
@@ -102,7 +104,7 @@ p {
   max-width: 75%;
 }
 
-.app-title {
+/* .app-title {
   font-size: 3rem;
   background-color: var(--primary);
   color: var(--dark);
@@ -110,7 +112,7 @@ p {
   display: inline-block;
   border-radius: var(--border-radius);
   box-shadow: 6px 5px var(--light-dark);
-}
+} */
 
 .list-group {
   padding: 0;
