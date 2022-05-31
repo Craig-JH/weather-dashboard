@@ -49,12 +49,12 @@ var fetchData = function (cityName) {
 				});
 		})
 		.catch(function () {
-			console.log('Could not find a city by that name.');
+			console.log('Please Enter a Valid City.');
 		});
 };
 
 var displayFetchedContent = function (fetchedWeatherConditions) {
-	currentConditionsHeaderEl.textContent = theCity + moment().format(' (M / D / YYYY) ');
+	currentConditionsHeaderEl.textContent = theCity + moment().format(' (MM/DD/YYYY) ');
 	setCurrentConditionsDisplay(fetchedWeatherConditions);
 	buildFiveDayForecast(fetchedWeatherConditions);
 };
@@ -81,7 +81,7 @@ var createDailyCard = function (cardIndex, weatherConditions) {
 
 	var cardTitle = document.createElement('div');
 	cardTitle.setAttribute('class', 'card-title');
-	cardTitle.textContent = moment().add(cardIndex, 'days').format(' (M / D / YYYY) ');
+	cardTitle.textContent = moment().add(cardIndex, 'days').format(' (MM/DD/YYYY) ');
 
 	var cardIcon = document.createElement('img');
 	cardIcon.setAttribute('src', 'https://openweathermap.org/img/wn/' + weatherConditions.daily[cardIndex].weather[0].icon + '.png');
